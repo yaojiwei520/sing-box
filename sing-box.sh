@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # 定义要下载的 GitHub 版本页面链接
-base_url="https://github.com/yaojiwei520/sing-box/releases/download/v1.0"
+base_url="https://ghp.ci/https://github.com/yaojiwei520/sing-box/releases/download/v1.0"
 
 # 定义要下载的文件名
 files=(
