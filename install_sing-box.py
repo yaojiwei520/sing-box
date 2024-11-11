@@ -64,19 +64,6 @@ if __name__ == "__main__":
     print("正在更新 opkg...")
     subprocess.run(["opkg", "update"])
 
-    # 下载并安装 homeproxy 文件
-    homeproxy_files = fetch_files(BASE_URL, 'homeproxy')
-    total_files = len(homeproxy_files)
-
-    for i, file in enumerate(homeproxy_files):
-        full_url = os.path.join(BASE_URL, file)
-        downloaded_file = download_file(full_url)
-        if downloaded_file:
-            install_package(downloaded_file)
-            show_progress_bar(i + 1, total_files)
-
-    print("\n")
-
     # 下载并安装 chinadns-ng 文件
     chinadns_files = fetch_files(CHINADNS_BASE_URL, 'chinadns-ng')
     total_files = len(chinadns_files)
@@ -88,4 +75,21 @@ if __name__ == "__main__":
             install_package(downloaded_file)
             show_progress_bar(i + 1, total_files)
 
+    print("\n")
+
+
+    # 下载并安装 homeproxy 文件
+    homeproxy_files = fetch_files(BASE_URL, 'homeproxy')
+    total_files = len(homeproxy_files)
+
+    for i, file in enumerate(homeproxy_files):
+        full_url = os.path.join(BASE_URL, file)
+        downloaded_file = download_file(full_url)
+        if downloaded_file:
+            install_package(downloaded_file)
+            show_progress_bar(i + 1, total_files)
+
+    
+
+    
     print("\n所有操作完成！")
