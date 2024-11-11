@@ -1,4 +1,8 @@
 # downlaod-sing-box of shell
+# install_sing-box.py
+## 脚本说明
+* 前提必须使用科学上网，不然下载不了。
+
 
 
 ---
