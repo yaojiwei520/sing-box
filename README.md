@@ -24,3 +24,6 @@
 ## 4.上传文件：
 
 * 将下载的 .ipk 文件上传到刚创建的 Release。
+---
+# homeproxy.py
+下载url=https://github.com/qichiyuhub/rule/tree/master/config/singbox 里面关键字homeproxy并下载下来。
